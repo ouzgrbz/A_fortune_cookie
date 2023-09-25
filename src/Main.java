@@ -1,17 +1,60 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.lang.Math;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+class Fortune {
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+    public int generateRandom() {
+
+        return (int)(Math.random() * 10);
+
     }
+
+    public static void main(String[] args) {
+
+        Fortune fortuneCookie = new Fortune();
+        int fortune = fortuneCookie.generateRandom();
+
+        if (fortune == 0) {
+
+            System.out.println("Flattery will go far tonight.");
+
+        } else if (fortune == 1) {
+
+            System.out.println("Don't behave with cold manners.");
+
+        } else if (fortune == 2) {
+
+            System.out.println("May you someday be carbon neutral");
+
+        } else if (fortune == 3) {
+
+            System.out.println("You have rice in your teeth.");
+
+        } else if (fortune == 4) {
+
+            System.out.println("A conclusion is simply the place where you got tired of thinking.");
+
+        } else if (fortune == 5) {
+
+            System.out.println("No snowflake feels responsible in an avalanche.");
+
+        } else if (fortune == 6) {
+
+            System.out.println("He who laughs last is laughing at you.");
+
+        } else if (fortune == 7) {
+
+            System.out.println("If you look back, you'll soon be going that way.");
+
+        } else if (fortune == 8) {
+
+            System.out.println("You will live long enough to open many fortune cookies.");
+
+        } else if (fortune == 9) {
+
+            System.out.println("The fortune you seek is in another cookie.");
+
+        }
+
+    }
+
 }
